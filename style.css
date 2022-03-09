@@ -1,8 +1,27 @@
-header{
-    
-}
+* {
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: left;
+  }  
+  .flex-item-left {
+    padding: 150px;
+  }  
+  .flex-item-right {
+    padding: 10px;
+  }
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+  }
+  
 body {
-    background-image: url(Simpsons-Zoom-Background.png);
+    background-image: url(./midia/img/Simpsons-Zoom-Background.png);
     min-height: 300px;
     background-attachment: fixed;
     background-position: center;
@@ -13,9 +32,6 @@ footer{
     color: yellow;
     position: center;
     text-align: center;  
-}
-div {
-    padding: 150px;
 }
 button {
   display: inline-block;
