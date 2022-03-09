@@ -1,0 +1,43 @@
+header{
+    
+}
+body {
+    background-image: url(Simpsons-Zoom-Background.png);
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer{
+    color: yellow;
+    position: center;
+    text-align: center;  
+}
+div {
+    padding: 150px;
+}
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  background-color: #eeff07;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(10, 10, 10);
+}
+button:hover {
+    color: whitesmoke;
+    background-color: #000000;
+    box-shadow: 0 9px #eeff07;
+}
+button:active {
+    background-color: #000000;
+    box-shadow: 0 5px rgb(248, 203, 0);
+    transform: translateY(4px);
+  }
