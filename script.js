@@ -5,8 +5,8 @@ const imagem = document.querySelector('#img')
 btnmudar.addEventListener('click', () =>{
    
     if(btnmudar.value == 'primeiro'){
-        imagem.src = '../midia/img/homer.png' 
-        nome.innerText = 'Homer' 
+        imagem.src = '../midia/img/familiasimpsons.png' 
+        nome.innerText = 'Familia' 
         btnmudar.value = 'segundo'
 
     } else if(btnmudar.value == 'segundo') { 
@@ -23,8 +23,8 @@ btnmudar.addEventListener('click', () =>{
         nome.innerText = 'Barte'
         btnmudar.value = 'quinto'
     } else { 
-        imagem.src = './midia/img/familiasimpsons.png'
-        nome.innerText = 'Familia'
+        imagem.src = './midia/img/homer.png'
+        nome.innerText = 'Homer'
         btnmudar.value = 'primeiro'
     }
 })
