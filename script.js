@@ -28,6 +28,3 @@ btnmudar.addEventListener('click', () =>{
         btnmudar.value = 'primeiro';
     }
 })
-  
-      
-document.getElementById("img").src="./midia/img/homer.png";
