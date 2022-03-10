@@ -5,7 +5,7 @@ const imagem = document.querySelector('#img')
 btnmudar.addEventListener('click', () =>{
    
     if(btnmudar.value == 'primeiro'){
-        imagem.src = '../midia/img/familiasimpsons.png' 
+        imagem.src = './midia/img/familiasimpsons.png' 
         nome.innerText = 'Familia' 
         btnmudar.value = 'segundo'
 
