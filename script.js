@@ -1,11 +1,33 @@
-const btnmudar = document.querySelector("#btn"); // Captura o botão no DOM pelo id
+const btnmudar = document.querySelector("#btn");
+const nome =document.getElementById('nome');
+const imagem = document.querySelector('#img')
 
-
-btnmudar.addEventListener("click", function () { // Adiciona um evento de click no botão capturado e assim que for clicado, executa a função.
-    
-    document.getElementById("img").src="./midia/img/homer.png";
+btnmudar.addEventListener('click', () =>{
    
-     
-});
+    if(btnmudar.value == 'primeiro'){
+        imagem.src = '../midia/img/homer.png' 
+        nome.innerText = 'Homer' 
+        btnmudar.value = 'segundo'
+
+    } else if(btnmudar.value == 'segundo') { 
+        imagem.src = './midia/img/Marge.png'
+        nome.innerText = 'Marge' 
+        btnmudar.value = 'terceiro' 
+
+    } else if(btnmudar.value == 'terceiro') { 
+        imagem.src = './midia/img/lisa.png'
+        nome.innerText = 'lisa'
+        btnmudar.value = 'quarto'
+    } else if(btnmudar.value == 'quarto') { 
+        imagem.src = './midia/img/barte.png'
+        nome.innerText = 'Barte'
+        btnmudar.value = 'quinto'
+    } else { 
+        imagem.src = './midia/img/familiasimpsons.png'
+        nome.innerText = 'Familia'
+        btnmudar.value = 'primeiro'
+    }
+})
   
       
+document.getElementById("img").src="./midia/img/homer.png";
